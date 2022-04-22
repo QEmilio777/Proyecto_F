@@ -225,7 +225,7 @@ public class FrmDetallesUsuario extends javax.swing.JFrame {
         if (txt_usuario.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Hay campos vacios, debe llenar nombre de usuario po lo menos", "Error", JOptionPane.WARNING_MESSAGE);
         } else {
-            if (modSql.existeUsuario(txt_usuario.getText()) == 0) {
+            
 
                 if (modSql.esEmail(txt_email.getText())) {
 
@@ -233,9 +233,7 @@ public class FrmDetallesUsuario extends javax.swing.JFrame {
                 } else {
                     JOptionPane.showMessageDialog(null, "El correo electronico no es valido");
                 }
-            } else {
-                JOptionPane.showMessageDialog(null, "El usuario ya existe");
-            }
+            
         }
     }//GEN-LAST:event_btnGuardarActionPerformed
 
